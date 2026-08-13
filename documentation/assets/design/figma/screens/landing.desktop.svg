@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <!-- Top nav -->
+  <g transform="translate(40,24)">
+    <rect x="0" y="0" width="1320" height="64" rx="8" fill-opacity="0"/>
+    <text x="10" y="38" font-family="Inter, sans-serif" font-size="20" fill="#0B2B4A">DeliveryPortal</text>
+    <g transform="translate(1100,12)">
+      <rect x="0" y="6" width="120" height="36" rx="6" fill="#2FB6FF"/>
+      <text x="18" y="30" font-family="Inter, sans-serif" font-size="14" fill="#001">Start Building</text>
+    </g>
+  </g>
+  <!-- Hero -->
+  <g transform="translate(40,120)">
+    <text x="0" y="64" font-family="Inter, sans-serif" font-size="40" font-weight="700" fill="#0B2B4A">Connect Your Business With Intelligent Delivery Infrastructure</text>
+    <text x="0" y="104" font-family="Inter, sans-serif" font-size="18" fill="#6B7280">A smart delivery integration platform connecting companies, APIs, logistics providers, and customers through one secure ecosystem.</text>
+    <g transform="translate(0,140)">
+      <rect x="0" y="0" width="680" height="360" rx="12" fill="#F6F7F9" stroke="#E6E9EE"/>
+      <text x="24" y="44" font-family="Inter, sans-serif" font-size="16" fill="#22356F">Floating Dashboard Preview (placeholder)</text>
+    </g>
+    <g transform="translate(740,140)">
+      <rect x="0" y="0" width="420" height="360" rx="12" fill="#FFFFFF" stroke="#E6E9EE"/>
+      <text x="20" y="44" font-family="Inter, sans-serif" font-size="14" fill="#9AA3B2">3D network visualization placeholder</text>
+    </g>
+  </g>
+  <!-- Features -->
+  <g transform="translate(40,540)">
+    <text x="0" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0B2B4A">Features</text>
+    <g transform="translate(0,44)">
+      <!-- card 1 -->
+      <rect x="0" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="16" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">Smart Delivery Management</text>
+      <text x="16" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">Intelligent route optimization and orchestration.</text>
+      <!-- card 2 -->
+      <rect x="360" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="376" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">API First Infrastructure</text>
+      <text x="376" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">API-driven integrations and webhooks.</text>
+      <!-- card 3 -->
+      <rect x="720" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="736" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">Real-Time Tracking</text>
+      <text x="736" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">Live tracking and status updates.</text>
+    </g>
+  </g>
+</svg>

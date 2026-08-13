@@ -1,0 +1,25 @@
+{
+  "primary": {
+    "deepBlue": "#0B2B4A",
+    "indigo600": "#22356F",
+    "indigo500": "#2D4BAC"
+  },
+  "accent": {
+    "electricBlue": "#2FB6FF",
+    "intelligentPurple": "#7C4DFF",
+    "emerald": "#18A974"
+  },
+  "neutral": {
+    "white": "#FFFFFF",
+    "gray100": "#F6F7F9",
+    "gray200": "#EBEDF1",
+    "gray500": "#9AA3B2",
+    "gray800": "#2B2F3A",
+    "black": "#0B0F14"
+  },
+  "darkMode": {
+    "bg": "#0B0E13",
+    "panel": "#0F1720",
+    "muted": "#6B7280"
+  }
+}

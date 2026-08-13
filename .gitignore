@@ -1,0 +1,67 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local runtime directories
+node_modules/
+frontend/node_modules/
+backend/vendor/
+vendor/
+.venv/
+venv/
+ENV/
+
+# Framework cache and storage
+backend/storage/logs/
+backend/storage/app/
+backend/bootstrap/cache/
+backend/.phpunit.result.cache
+frontend/dist/
+frontend/.cache/
+coverage/
+.nyc_output/
+
+# Build artifacts
+build/
+dist/
+.cache/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.editorconfig
+
+# OS metadata
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Certificates and local secrets
+*.pem
+*.key
+*.crt
+
+# Local config overrides
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+backend/.env
+backend/.env.local
+backend/.env.*.local

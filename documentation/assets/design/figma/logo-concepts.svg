@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
+  <!-- Concept 1: Connected nodes -->
+  <g id="concept-1" transform="translate(40,20)">
+    <rect width="360" height="200" rx="14" fill="#F6F7F9" stroke="#E6E9EE"/>
+    <circle cx="80" cy="100" r="18" fill="#0B2B4A"/>
+    <circle cx="160" cy="60" r="12" fill="#2FB6FF"/>
+    <circle cx="240" cy="140" r="14" fill="#7C4DFF"/>
+    <path d="M88 104 L160 68 L240 146" stroke="#22356F" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="28" y="190" font-family="Inter, sans-serif" font-size="18" fill="#0B2B4A">Concept 1 — Network Mark</text>
+  </g>
+  <!-- Concept 2: Route ribbon -->
+  <g id="concept-2" transform="translate(420,20)">
+    <rect width="360" height="200" rx="14" fill="#FFFFFF" stroke="#E6E9EE"/>
+    <path d="M60 160 C140 40, 220 40, 300 160" stroke="#2D4BAC" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <circle cx="60" cy="160" r="8" fill="#18A974"/>
+    <circle cx="300" cy="160" r="10" fill="#2FB6FF"/>
+    <text x="28" y="190" font-family="Inter, sans-serif" font-size="18" fill="#0B2B4A">Concept 2 — Route Ribbon</text>
+  </g>
+  <!-- Concept 3: Abstract shield + node -->
+  <g id="concept-3" transform="translate(800,20)">
+    <rect width="360" height="200" rx="14" fill="#F6F7F9" stroke="#E6E9EE"/>
+    <path d="M180 36 L140 64 L140 116 C140 150 165 180 180 196 C195 180 220 150 220 116 L220 64 Z" fill="#22356F"/>
+    <circle cx="180" cy="116" r="12" fill="#2FB6FF"/>
+    <text x="28" y="190" font-family="Inter, sans-serif" font-size="18" fill="#0B2B4A">Concept 3 — Shield Node</text>
+  </g>
+</svg>

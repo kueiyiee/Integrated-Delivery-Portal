@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect id="bg" width="100%" height="100%" fill="#F6F7F9"/>
+  <!-- Sidebar -->
+  <rect id="sidebar" x="24" y="24" width="220" height="840" rx="12" fill="#FFFFFF" stroke="#E6E9EE"/>
+  <text id="brand" x="48" y="64" font-family="Inter, sans-serif" font-size="18" fill="#0B2B4A">DeliveryPortal</text>
+  <g id="nav-items" transform="translate(48,96)" font-family="Inter, sans-serif" font-size="14" fill="#22356F">
+    <text id="nav-dashboard" y="0">Dashboard</text>
+    <text id="nav-orgs" y="36">Organizations</text>
+    <text id="nav-users" y="72">Users</text>
+    <text id="nav-roles" y="108">Roles & Permissions</text>
+    <text id="nav-deliveries" y="144">Deliveries</text>
+  </g>
+  <!-- Top bar -->
+  <rect id="topbar" x="260" y="24" width="1096" height="64" rx="8" fill="#FFFFFF" stroke="#E6E9EE"/>
+  <text id="search-placeholder" x="280" y="64" font-family="Inter, sans-serif" font-size="14" fill="#6B7280">Search…</text>
+
+  <!-- Main content -->
+  <g id="main" transform="translate(260,112)">
+    <text id="main-title" x="0" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0B2B4A">System Overview</text>
+    <g id="cards" transform="translate(0,48)">
+      <!-- cards -->
+      <rect id="card-1" x="0" y="0" width="240" height="110" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text id="card-1-label" x="16" y="36" font-size="13" fill="#9AA3B2">Total Companies</text>
+      <text id="card-1-value" x="16" y="68" font-size="24" fill="#22356F">128</text>
+
+      <rect id="card-2" x="280" y="0" width="240" height="110" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text id="card-2-label" x="296" y="36" font-size="13" fill="#9AA3B2">Active Users</text>
+      <text id="card-2-value" x="296" y="68" font-size="24" fill="#22356F">2,412</text>
+
+      <rect id="card-3" x="560" y="0" width="240" height="110" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text id="card-3-label" x="576" y="36" font-size="13" fill="#9AA3B2">Total Deliveries</text>
+      <text id="card-3-value" x="576" y="68" font-size="24" fill="#22356F">48,321</text>
+    </g>
+    <!-- Analytics placeholder chart -->
+    <rect id="analytics" x="0" y="180" width="880" height="300" rx="12" fill="#FFFFFF" stroke="#EBEDF1"/>
+    <text id="analytics-label" x="16" y="208" font-family="Inter, sans-serif" font-size="14" fill="#6B7280">Delivery growth (placeholder chart)</text>
+  </g>
+</svg>

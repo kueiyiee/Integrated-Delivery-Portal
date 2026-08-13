@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect id="bg" width="100%" height="100%" fill="#FFFFFF"/>
+  <!-- Top nav -->
+  <g id="nav" transform="translate(40,24)">
+    <rect id="nav-bar" x="0" y="0" width="1320" height="64" rx="8" fill-opacity="0"/>
+    <text id="brand" x="10" y="38" font-family="Inter, sans-serif" font-size="20" fill="#0B2B4A">DeliveryPortal</text>
+    <g id="cta" transform="translate(1100,12)">
+      <rect id="cta-bg" x="0" y="6" width="120" height="36" rx="6" fill="#2FB6FF"/>
+      <text id="cta-text" x="18" y="30" font-family="Inter, sans-serif" font-size="14" fill="#001">Start Building</text>
+    </g>
+  </g>
+  <!-- Hero -->
+  <g id="hero" transform="translate(40,120)">
+    <text id="hero-title" x="0" y="64" font-family="Inter, sans-serif" font-size="40" font-weight="700" fill="#0B2B4A">Connect Your Business With Intelligent Delivery Infrastructure</text>
+    <text id="hero-sub" x="0" y="104" font-family="Inter, sans-serif" font-size="18" fill="#6B7280">A smart delivery integration platform connecting companies, APIs, logistics providers, and customers through one secure ecosystem.</text>
+    <g id="preview" transform="translate(0,140)">
+      <rect id="dashboard-frame" x="0" y="0" width="680" height="360" rx="12" fill="#F6F7F9" stroke="#E6E9EE"/>
+      <g id="floating-window" transform="translate(24,28)">
+        <rect x="0" y="0" width="300" height="200" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+        <text x="12" y="24" font-family="Inter, sans-serif" font-size="13" fill="#22356F">Floating Dashboard Preview</text>
+      </g>
+    </g>
+    <g id="visual" transform="translate(740,140)">
+      <rect x="0" y="0" width="420" height="360" rx="12" fill="#FFFFFF" stroke="#E6E9EE"/>
+      <g id="network-visual" transform="translate(20,24)">
+        <circle cx="60" cy="60" r="8" fill="#2FB6FF"/>
+        <circle cx="160" cy="40" r="6" fill="#7C4DFF"/>
+        <circle cx="260" cy="160" r="6" fill="#18A974"/>
+        <path d="M68 64 L160 44 L260 164" stroke="#22356F" stroke-width="2" fill="none"/>
+      </g>
+    </g>
+  </g>
+  <!-- Features -->
+  <g id="features" transform="translate(40,540)">
+    <text id="features-title" x="0" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0B2B4A">Features</text>
+    <g id="cards" transform="translate(0,44)">
+      <!-- card 1 -->
+      <rect id="card-1" x="0" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="16" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">Smart Delivery Management</text>
+      <text x="16" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">Intelligent route optimization and orchestration.</text>
+      <!-- card 2 -->
+      <rect id="card-2" x="360" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="376" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">API First Infrastructure</text>
+      <text x="376" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">API-driven integrations and webhooks.</text>
+      <!-- card 3 -->
+      <rect id="card-3" x="720" y="0" width="320" height="120" rx="10" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="736" y="28" font-family="Inter, sans-serif" font-size="16" fill="#22356F">Real-Time Tracking</text>
+      <text x="736" y="52" font-family="Inter, sans-serif" font-size="13" fill="#6B7280">Live tracking and status updates.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+# Environment Variables
+
+## Backend
+
+- `APP_NAME`
+- `APP_ENV`
+- `APP_KEY`
+- `APP_DEBUG`
+- `APP_URL`
+- `DB_CONNECTION`
+- `DB_HOST`
+- `DB_PORT`
+- `DB_DATABASE`
+- `DB_USERNAME`
+- `DB_PASSWORD`
+- `REDIS_HOST`
+- `REDIS_PASSWORD`
+- `REDIS_PORT`
+
+## Frontend
+
+- `VITE_API_BASE_URL`
+- `VITE_APP_NAME`
+- `VITE_SENTRY_DSN`

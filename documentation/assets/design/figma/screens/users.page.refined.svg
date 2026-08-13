@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect id="bg" width="100%" height="100%" fill="#FFFFFF"/>
+  <!-- Header -->
+  <rect id="header" x="24" y="24" width="1352" height="64" rx="8" fill="#F6F7F9" stroke="#E6E9EE"/>
+  <text id="page-title" x="48" y="64" font-family="Inter, sans-serif" font-size="18" fill="#0B2B4A">Users</text>
+  <!-- Controls -->
+  <g id="controls" transform="translate(48,110)">
+    <rect id="search" x="0" y="0" width="280" height="44" rx="8" fill="#FFFFFF" stroke="#EBEDF1"/>
+    <text x="16" y="30" font-family="Inter, sans-serif" font-size="13" fill="#9AA3B2">Search users...</text>
+    <rect id="invite-btn" x="312" y="0" width="160" height="44" rx="8" fill="#2FB6FF"/>
+    <text x="332" y="30" font-family="Inter, sans-serif" font-size="14" fill="#001">Invite User</text>
+  </g>
+
+  <!-- Table header -->
+  <g id="table" transform="translate(48,180)">
+    <rect id="table-head" x="0" y="0" width="1280" height="56" rx="8" fill="#FFFFFF" stroke="#EBEDF1"/>
+    <text id="col-name" x="24" y="36" font-family="Inter, sans-serif" font-size="14" fill="#22356F">Name</text>
+    <text id="col-email" x="320" y="36" font-family="Inter, sans-serif" font-size="14" fill="#22356F">Email</text>
+    <text id="col-roles" x="720" y="36" font-family="Inter, sans-serif" font-size="14" fill="#22356F">Roles</text>
+    <text id="col-actions" x="1040" y="36" font-family="Inter, sans-serif" font-size="14" fill="#22356F">Actions</text>
+  </g>
+  <!-- Row sample -->
+  <g id="row-1" transform="translate(48,246)">
+    <rect x="0" y="0" width="1280" height="64" rx="8" fill="#FFFFFF" stroke="#F1F5F9"/>
+    <text id="row-1-name" x="24" y="40" font-family="Inter, sans-serif" font-size="14" fill="#0B2B4A">Alex Morgan</text>
+    <text id="row-1-email" x="320" y="40" font-family="Inter, sans-serif" font-size="14" fill="#6B7280">alex@acme.com</text>
+    <g id="row-1-roles" transform="translate(720,12)">
+      <rect x="0" y="0" width="96" height="28" rx="14" fill="#EEF2FF"/>
+      <text x="12" y="20" font-family="Inter, sans-serif" font-size="13" fill="#4338CA">Admin</text>
+    </g>
+    <g id="row-1-actions" transform="translate(1040,18)">
+      <rect x="0" y="0" width="72" height="28" rx="6" fill="#FFFFFF" stroke="#EBEDF1"/>
+      <text x="14" y="20" font-family="Inter, sans-serif" font-size="13" fill="#22356F">Edit</text>
+      <rect x="86" y="0" width="96" height="28" rx="6" fill="#FFF1F2" stroke="#FECACA"/>
+      <text x="110" y="20" font-family="Inter, sans-serif" font-size="13" fill="#B91C1C">Remove</text>
+    </g>
+  </g>
+</svg>

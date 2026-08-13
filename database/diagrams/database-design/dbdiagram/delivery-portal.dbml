@@ -1,0 +1,40 @@
+Project delivery_portal {
+  database_type: "MySQL"
+  Note: "Delivery integration SaaS platform schema"
+}
+
+Table companies {
+  id bigint [pk, increment]
+  uuid char(36) [unique, not null]
+  name varchar(255) [not null]
+  slug varchar(120) [unique, not null]
+  status varchar(50) [not null]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table users {
+  id bigint [pk, increment]
+  company_id bigint [not null]
+  uuid char(36) [unique, not null]
+  name varchar(255) [not null]
+  email varchar(255) [unique, not null]
+  password varchar(255) [not null]
+  status varchar(50) [not null]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table deliveries {
+  id bigint [pk, increment]
+  company_id bigint [not null]
+  uuid char(36) [unique, not null]
+  tracking_number varchar(120) [unique, not null]
+  external_reference varchar(120)
+  status varchar(50) [not null]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Ref: users.company_id > companies.id
+Ref: deliveries.company_id > companies.id

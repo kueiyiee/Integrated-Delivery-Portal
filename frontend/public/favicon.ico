@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Placeholder ICO (SVG content saved as .ico) - replace with proper .ico in production -->
+<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'>
+  <rect width='64' height='64' rx='12' fill='url(#g)' />
+  <defs>
+    <linearGradient id='g' x1='0' x2='1'>
+      <stop offset='0' stop-color='#2563eb'/>
+      <stop offset='1' stop-color='#8b5cf6'/>
+    </linearGradient>
+  </defs>
+  <rect x='10' y='22' width='38' height='12' rx='2' fill='#fff' opacity='0.95'/>
+  <circle cx='22' cy='44' r='3' fill='#fff'/>
+  <circle cx='42' cy='44' r='3' fill='#fff'/>
+</svg>

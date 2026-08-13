@@ -1,0 +1,78 @@
+416:<div className="company-chart__bar" style={{ height: `${height}%` }} />
+454:<section className="company-grid company-grid--split company-grid--gap-lg" style={{ marginTop: 18 }}>
+581:<div style={{ padding: '1.5rem', color: 'var(--text-muted)' }}>Loading customer data…</div>
+583:<div style={{ padding: '1.5rem', color: 'var(--text-muted)' }}>No customers have been added yet.</div>
+587:{error && <div style={{ marginTop: '1rem', color: 'var(--danger)' }}>{error}</div>}
+1193:<article className="company-card" style={{ marginBottom: 18 }}>
+1311:<div style={{ color: 'var(--text-muted)' }}>Loading reports…</div>
+1313:<div style={{ color: 'var(--danger)' }}>{error}</div>
+1340:<section className="company-grid company-grid--split" style={{ gap: 18, marginBottom: 18 }}>
+1345:<section className="company-grid company-grid--split" style={{ gap: 18 }}>
+1352:<div style={{ display: 'grid', gap: 10 }}>
+1353:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
+1354:<span style={{ color: 'var(--text-muted)' }}>Completed</span>
+1357:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
+1358:<span style={{ color: 'var(--text-muted)' }}>Pending</span>
+1361:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
+1362:<span style={{ color: 'var(--text-muted)' }}>Cancelled</span>
+1365:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
+1366:<span style={{ color: 'var(--text-muted)' }}>Success rate</span>
+1585:<div style={{ marginRight: '0.8rem' }}>
+1699:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+1700:<div className="company-badge company-badge--success" style={{ border: '1px solid rgba(var(--accent-rgb), 0.26)', background: 'rgba(var(--accent-rgb), 0.1)', color: 'var(--accent)' }}>
+1705:<div className={`company-alert company-alert--${message.type === 'success' ? 'success' : 'danger'}`} style={{ flex: 1, minWidth: '260px' }}>
+1711:<div className="company-grid company-grid--two-column" style={{ gap: '1.5rem' }}>
+1712:<div style={{ display: 'grid', gap: '1rem' }}>
+1713:<div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+1714:<div style={{ width: 140, height: 140, borderRadius: 28, overflow: 'hidden', display: 'grid', placeItems: 'center', background: 'var(--surface-elevated)', border: '1px solid rgba(15, 23, 42, 0.08)', boxShadow: '0 24px 40px rgba(15, 23, 42, 0.12)' }}>
+1718:<label className="btn btn-secondary" style={{ cursor: 'pointer' }}>
+1720:<input type="file" accept="image/png,image/jpg,image/jpeg,image/webp" onChange={handlePhotoUpload} style={{ display: 'none' }} />
+1722:{photoError ? <div className="company-alert company-alert--danger" style={{ marginTop: '0.75rem' }}>{photoError}</div> : null}
+1737:<div style={{ display: 'grid', gap: '1rem' }}>
+1753:<div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+1763:<section className="company-card" style={{ background: 'linear-gradient(135deg, var(--surface-2), var(--surface-3))', border: '1px solid rgba(var(--accent-rgb), 0.24)', boxShadow: 'var(--shadow)' }}>
+1773:<div className="company-grid company-grid--two-column" style={{ gap: '1rem', marginBottom: '1rem' }}>
+1788:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+1789:<div className="company-detail-label" style={{ color: 'var(--accent)', lineHeight: 1.8 }}>Use a minimum of 8 characters with uppercase, lowercase, numbers, and symbols.</div>
+1790:<button type="button" onClick={handlePasswordChange} disabled={passwordSaving || !passwordForm.current_password || !passwordForm.password || !passwordForm.password_confirmation} className="btn btn-primary" style={{ opacity: passwordSaving || !passwordForm.current_password || !passwordForm.password || !passwordForm.password_confirmation ? 0.6 : 1 }}>
+1796:<div className={`company-alert company-alert--${passwordMessage.type === 'success' ? 'success' : 'danger'}`} style={{ marginTop: '1rem' }}>
+1801:<div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid var(--border)' }}>
+1802:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+1804:<h4 style={{ margin: 0 }}>Two-factor authentication</h4>
+1805:<div style={{ color: 'var(--text-muted)', fontSize: 13, marginTop: 4 }}>{securitySummary?.mfa_enabled ? 'Authentication is protected with MFA.' : 'Add an extra layer of protection to your account.'}</div>
+1813:<div style={{ marginTop: '1rem', padding: '1rem', borderRadius: 14, background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+1814:<div style={{ color: 'var(--text-muted)', marginBottom: 8 }}>Scan this QR code using an authenticator app and enter the 6-digit code below.</div>
+1815:<div style={{ color: 'var(--border)', fontSize: 12, wordBreak: 'break-all' }}>{mfaQr}</div>
+1816:<input value={mfaCode} onChange={(e) => setMfaCode(e.target.value)} className="company-input" placeholder="Enter 6-digit code" style={{ marginTop: 10 }} />
+1817:<div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 10 }}>
+1823:{mfaMessage ? <div className={`company-alert company-alert--${mfaMessage.type === 'success' ? 'success' : 'danger'}`} style={{ marginTop: '1rem' }}>{mfaMessage.text}</div> : null}
+1826:<div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid var(--border)', display: 'grid', gap: '1rem' }}>
+1827:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+1829:<h4 style={{ margin: 0 }}>Login history</h4>
+1830:<div style={{ color: 'var(--text-muted)', fontSize: 13 }}>Recent sign-ins and authentication outcomes.</div>
+1833:{securityLoading ? <div style={{ color: 'var(--text-muted)' }}>Loading security activity…</div> : (
+1834:<div style={{ display: 'grid', gap: 8 }}>
+1835:{(securitySummary?.login_history ?? []).length === 0 ? <div style={{ color: 'var(--text-muted)' }}>No sign-in activity recorded yet.</div> : (securitySummary?.login_history ?? []).map((item: any) => (
+1836:<div key={item.id} style={{ padding: '0.8rem 0.9rem', borderRadius: 12, border: '1px solid var(--border)', background: 'var(--surface-2)' }}>
+1837:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
+1841:<div style={{ color: 'var(--text-muted)', fontSize: 13, marginTop: 6 }}>{item.ip_address || 'Unknown IP'} • {item.browser || 'Unknown browser'} • {item.device || 'Unknown device'}</div>
+1848:<div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid var(--border)', display: 'grid', gap: '1rem' }}>
+1849:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+1851:<h4 style={{ margin: 0 }}>Activity logs</h4>
+1852:<div style={{ color: 'var(--text-muted)', fontSize: 13 }}>Recent account and profile actions.</div>
+1855:<div style={{ display: 'grid', gap: 8 }}>
+1856:{(securitySummary?.activity_logs ?? []).length === 0 ? <div style={{ color: 'var(--text-muted)' }}>No recent activity recorded.</div> : (securitySummary?.activity_logs ?? []).map((item: any) => (
+1857:<div key={item.id} style={{ padding: '0.8rem 0.9rem', borderRadius: 12, border: '1px solid var(--border)', background: 'var(--surface-2)' }}>
+1858:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
+1860:<span style={{ color: 'var(--text-muted)', fontSize: 12 }}>{new Date(item.created_at).toLocaleString()}</span>
+1862:<div style={{ color: 'var(--text-muted)', fontSize: 13, marginTop: 6 }}>{item.metadata ? JSON.stringify(item.metadata) : 'No metadata'}</div>
+1868:<div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid var(--border)', display: 'grid', gap: '1rem' }}>
+1869:<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+1871:<h4 style={{ margin: 0 }}>Session management</h4>
+1872:<div style={{ color: 'var(--text-muted)', fontSize: 13 }}>Manage currently active sessions and revoke suspicious access.</div>
+1877:<div style={{ display: 'grid', gap: 8 }}>
+1878:{(securitySummary?.sessions ?? []).length === 0 ? <div style={{ color: 'var(--text-muted)' }}>No active device sessions recorded.</div> : (securitySummary?.sessions ?? []).map((item: any) => (
+1879:<div key={item.id} style={{ padding: '0.8rem 0.9rem', borderRadius: 12, border: '1px solid var(--border)', background: 'var(--surface-2)' }}>
+1880:<div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
+1883:<div style={{ color: 'var(--text-muted)', fontSize: 13, marginTop: 4 }}>{item.browser || 'Unknown browser'} • {item.os || 'Unknown OS'} • {item.ip_address || 'Unknown IP'}</div>
+1885:<div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
