@@ -73,9 +73,13 @@ This repository contains the current application implementation for the platform
    ```bash
    cp backend/.env.example backend/.env
    ```
-2. Update the database and app values for your environment.
-3. Do not commit your local .env file.
-4. Keep the root .env.example as a template for repository use.
+2. For frontend deployment, copy the Vite environment template:
+   ```bash
+   cp frontend/.env.example frontend/.env
+   ```
+3. Update the environment values for your local or production deployment.
+4. Do not commit your local .env file.
+5. Keep the root and backend `.env.example` files as safe templates for repository use.
 
 ## Backend setup
 
@@ -84,7 +88,7 @@ cd backend
 composer install
 php artisan key:generate
 php artisan migrate
-php artisan serve
+php artisan serve --host 0.0.0.0 --port 8000
 ```
 
 ## Frontend setup
@@ -110,16 +114,54 @@ npm run build
 npm run lint
 ```
 
-## Build and deployment
+## Production deployment
 
-- Frontend build: `npm run build`
-- Backend application: deployed via Laravel-ready PHP environment
-- Deployment examples live in deployment/ and the platform documentation folders
+### Vercel (Frontend)
+
+Set the project root to the `frontend` directory and define the environment variable:
+
+```env
+VITE_API_URL=https://YOUR-BACKEND-DOMAIN
+```
+
+Recommended build configuration:
+- Framework: Vite
+- Root Directory: `frontend`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
+
+A SPA rewrite configuration is included in `frontend/vercel.json` to support direct navigation.
+
+### Render (Backend)
+
+The Laravel API should be deployed as a PHP web service using the backend directory as the app root. Use production values for:
+- APP_ENV=production
+- APP_DEBUG=false
+- APP_URL=https://YOUR-BACKEND-DOMAIN
+- FRONTEND_URL=https://YOUR-VERCEL-DOMAIN
+- DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD
+- CORS_ALLOWED_ORIGINS=https://YOUR-VERCEL-DOMAIN
+- SANCTUM_STATEFUL_DOMAINS=YOUR-VERCEL-DOMAIN
+
+Recommended deployment command:
+```bash
+php artisan serve --host 0.0.0.0 --port $PORT
+```
+
+After deployment, run:
+```bash
+php artisan migrate --force
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
 
 ## Security notes
 
 - Real credentials must never be committed to the repository.
 - Use environment variables and placeholder values in `.env.example`.
+- CORS and Sanctum are environment-driven and should be limited to the production frontend domain.
 - Secrets should be rotated if they were ever published in a prior version of the project.
 
 ## Documentation

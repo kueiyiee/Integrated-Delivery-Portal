@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', 'localhost,127.0.0.1,localhost:5173')),
+    'stateful' => array_values(array_filter(array_map('trim', explode(',', env('SANCTUM_STATEFUL_DOMAINS', ''))))),
     'guard' => ['web'],
     'expiration' => env('SANCTUM_EXPIRATION', null),
     'middleware' => [

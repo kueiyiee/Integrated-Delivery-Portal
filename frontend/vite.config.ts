@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   const backendUrl =
     normalizeBackendUrl(env.VITE_BACKEND_URL) ||
     normalizeBackendUrl(env.VITE_API_URL) ||
-    'http://localhost:8000';
+    (mode === 'development' ? 'http://localhost:8000' : undefined);
 
   return {
     plugins: [react()],

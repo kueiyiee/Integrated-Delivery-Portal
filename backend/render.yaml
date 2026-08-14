@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: integrated-delivery-portal-api
+    env: php
+    plan: starter
+    region: oregon
+    buildCommand: composer install --no-dev --optimize-autoloader
+    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        value: https://YOUR-BACKEND-DOMAIN
+      - key: FRONTEND_URL
+        value: https://YOUR-VERCEL-DOMAIN
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://YOUR-VERCEL-DOMAIN
+      - key: SANCTUM_STATEFUL_DOMAINS
+        value: YOUR-VERCEL-DOMAIN
