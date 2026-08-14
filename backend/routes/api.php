@@ -12,7 +12,7 @@ use App\Controllers\API\Authentication\RegisterController;
 use App\Controllers\API\Authentication\EmailVerificationController;
 use App\Controllers\API\Client\CustomerController;
 use App\Controllers\API\Client\DeliveryController;
-use App\Controllers\Api\HealthController;
+use App\Controllers\API\HealthController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function (): void {

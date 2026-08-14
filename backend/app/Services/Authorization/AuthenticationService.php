@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Authentication;
+namespace App\Services\Authorization;
 
 use App\Models\Company;
 use App\Models\Permission;
