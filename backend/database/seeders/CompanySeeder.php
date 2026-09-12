@@ -25,9 +25,15 @@ class CompanySeeder extends Seeder
 
         $managerPermissions = [
             'client.access' => 'Access client features',
+            'manage.users' => 'Manage company users',
+            'manage.company' => 'Manage company profile',
+            'manage.settings' => 'Manage company settings',
             'manage.deliveries' => 'Manage deliveries',
             'manage.customers' => 'Manage customers',
             'manage.drivers' => 'Manage drivers',
+            'manage.api_keys' => 'Manage API keys',
+            'manage.webhooks' => 'Manage webhook endpoints',
+            'manage.documents' => 'Manage company documents',
         ];
 
         foreach ($managerPermissions as $name => $description) {

@@ -8,7 +8,6 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use OTPHP\TOTP;
 
 class SystemAdminSeeder extends Seeder
 {
@@ -26,6 +25,10 @@ class SystemAdminSeeder extends Seeder
             'admin.access' => 'Access the admin console',
             'manage.api_keys' => 'Manage API keys',
             'manage.webhooks' => 'Manage webhook endpoints',
+            'manage.users' => 'Manage users',
+            'manage.roles' => 'Manage roles and assignments',
+            'manage.company' => 'Manage company records',
+            'manage.documents' => 'Manage company documents',
             'manage.drivers' => 'Manage drivers',
             'manage.deliveries' => 'Manage deliveries',
             'manage.customers' => 'Manage customers',
@@ -56,8 +59,8 @@ class SystemAdminSeeder extends Seeder
                 'email_verified_at' => $primaryOwner->email_verified_at ?? now(),
                 'approved_at' => $primaryOwner->approved_at ?? now(),
                 'approved_by' => $primaryOwner->approved_by ?? null,
-                'mfa_enabled' => true,
-                'mfa_secret' => $primaryOwner->mfa_secret ?? TOTP::create()->getSecret(),
+                'mfa_enabled' => false,
+                'mfa_secret' => null,
                 'recovery_codes' => $primaryOwner->recovery_codes ?? collect(range(1, 10))->map(fn () => Str::random(10))->all(),
                 'last_password_changed_at' => $primaryOwner->last_password_changed_at ?? now(),
             ])->saveQuietly();
@@ -92,8 +95,8 @@ class SystemAdminSeeder extends Seeder
             'is_system_owner' => true,
             'email_verified_at' => now(),
             'approved_at' => now(),
-            'mfa_enabled' => true,
-            'mfa_secret' => TOTP::create()->getSecret(),
+            'mfa_enabled' => false,
+            'mfa_secret' => null,
             'recovery_codes' => collect(range(1, 10))->map(fn () => Str::random(10))->all(),
             'last_password_changed_at' => now(),
         ])->roles()->syncWithoutDetaching($systemRole);
