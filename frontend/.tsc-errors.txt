@@ -1,0 +1,49 @@
+src/authentication/pages/MfaSetup.tsx(8,1): error TS2578: Unused '@ts-expect-error' directive.
+src/components/layouts/Sidebar.tsx(4,37): error TS2339: Property 'children' does not exist on type '{}'.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(6,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(7,23): error TS2708: Cannot use namespace 'jest' as a value.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(8,33): error TS2708: Cannot use namespace 'jest' as a value.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(22,5): error TS2304: Cannot find name 'expect'.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(23,5): error TS2304: Cannot find name 'expect'.
+src/components/ui/__tests__/DashboardRefreshBar.test.tsx(25,5): error TS2304: Cannot find name 'expect'.
+src/layouts/AdminLayout/index.tsx(38,32): error TS2558: Expected 0 type arguments, but got 1.
+src/layouts/AdminLayout/index.tsx(295,18): error TS2322: Type '{ children: Element; type: "button"; className: string; onClick: () => void; onKeyDown: (e: KeyboardEvent<HTMLButtonElement>) => void; "aria-controls": string; "aria-expanded": string; "aria-label": string; style: { ...; }; }' is not assignable to type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'.
+  Type '{ children: Element; type: "button"; className: string; onClick: () => void; onKeyDown: (e: KeyboardEvent<HTMLButtonElement>) => void; "aria-controls": string; "aria-expanded": string; "aria-label": string; style: { ...; }; }' is not assignable to type 'ButtonHTMLAttributes<HTMLButtonElement>'.
+    Types of property '"aria-expanded"' are incompatible.
+      Type 'string' is not assignable to type 'Booleanish | undefined'.
+src/layouts/ClientLayout/index.tsx(42,32): error TS2558: Expected 0 type arguments, but got 1.
+src/layouts/ClientLayout/index.tsx(321,14): error TS2322: Type '{ children: Element; type: "button"; className: string; onClick: () => void; onKeyDown: (e: KeyboardEvent<HTMLButtonElement>) => void; "aria-controls": string; "aria-expanded": string; "aria-label": string; style: { ...; }; }' is not assignable to type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'.
+  Type '{ children: Element; type: "button"; className: string; onClick: () => void; onKeyDown: (e: KeyboardEvent<HTMLButtonElement>) => void; "aria-controls": string; "aria-expanded": string; "aria-label": string; style: { ...; }; }' is not assignable to type 'ButtonHTMLAttributes<HTMLButtonElement>'.
+    Types of property '"aria-expanded"' are incompatible.
+      Type 'string' is not assignable to type 'Booleanish | undefined'.
+src/modules/Admin/DataLifecyclePage.tsx(129,63): error TS18047: 'records' is possibly 'null'.
+src/modules/Client/ApiManagementPage.tsx(46,44): error TS2304: Cannot find name 'Webhook'.
+src/modules/Client/ApiManagementPage.tsx(669,86): error TS7006: Parameter 'eventName' implicitly has an 'any' type.
+src/modules/Client/ApiManagementPage.tsx(755,16): error TS18047: 'documentation' is possibly 'null'.
+src/modules/Client/ApiManagementPage.tsx(755,16): error TS18048: 'documentation.documentation' is possibly 'undefined'.
+src/modules/Client/ApiManagementPage.tsx(755,16): error TS18048: 'documentation.documentation.best_practices' is possibly 'undefined'.
+src/modules/Client/CompanyManagerPage.tsx(6,1): error TS2578: Unused '@ts-expect-error' directive.
+src/modules/Client/CompanyManagerPage.tsx(174,117): error TS2345: Argument of type 'DeliveryStatus' is not assignable to parameter of type '"failed" | "cancelled"'.
+  Type '"pending"' is not assignable to type '"failed" | "cancelled"'.
+src/modules/Client/CompanyManagerPage.tsx(1643,48): error TS2322: Type 'string | number | true | string[] | AxiosHeaders' is not assignable to type 'string | undefined'.
+  Type 'number' is not assignable to type 'string'.
+src/modules/Client/CompanyManagerPage.tsx(2232,59): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/modules/Client/CompanyManagerPage.tsx(2506,37): error TS7006: Parameter 'role' implicitly has an 'any' type.
+src/modules/Client/CompanyManagerPage.tsx(2824,44): error TS2552: Cannot find name 'handleRevokeAllSessions'. Did you mean 'revokeAllSessions'?
+src/modules/Client/CompanyManagerPage.tsx(2824,109): error TS2304: Cannot find name 'sessionBusyId'.
+src/modules/Client/CompanyManagerPage.tsx(2824,132): error TS2304: Cannot find name 'sessionBusyId'.
+src/modules/Client/CompanyManagerPage.tsx(2826,12): error TS2304: Cannot find name 'sessionMessage'.
+src/modules/Client/CompanyManagerPage.tsx(2826,77): error TS2304: Cannot find name 'sessionMessage'.
+src/modules/Client/CompanyManagerPage.tsx(2826,164): error TS2304: Cannot find name 'sessionMessage'.
+src/modules/Client/CompanyManagerPage.tsx(2837,80): error TS2552: Cannot find name 'handleRevokeSession'. Did you mean 'revokeSession'?
+src/modules/Client/CompanyManagerPage.tsx(2837,150): error TS2304: Cannot find name 'sessionBusyId'.
+src/modules/Client/CompanyManagerPage.tsx(2837,178): error TS2304: Cannot find name 'sessionBusyId'.
+src/modules/Client/CompanySettingsPage.tsx(7,1): error TS2578: Unused '@ts-expect-error' directive.
+src/modules/Client/CompanySettingsPage.tsx(429,61): error TS2339: Property 'mfa_enabled' does not exist on type 'Company'.
+src/modules/Client/CompanySettingsPage.tsx(430,20): error TS2339: Property 'mfa_enabled' does not exist on type 'Company'.
+src/utils/authAccess.ts(8,14): error TS7006: Parameter 'name' implicitly has an 'any' type.
+src/utils/authAccess.ts(20,18): error TS7006: Parameter 'name' implicitly has an 'any' type.
+src/utils/authAccess.ts(22,14): error TS7006: Parameter 'name' implicitly has an 'any' type.
+src/utils/authAccess.ts(22,20): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/utils/authAccess.ts(22,27): error TS7006: Parameter 'value' implicitly has an 'any' type.
